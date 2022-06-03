@@ -1,5 +1,3 @@
-console.log('Client side javascript file is loaded!')
-
 // Use fetch to get data from a URL and use it again on Client side
 // Below fetches JSON data from http link, then prints it into the console
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
