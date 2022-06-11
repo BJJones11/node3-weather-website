@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
-    "push": "git push & git push heroku"
+    "push": "git push & git push heroku",
+    "autostart": "nodemon src/app.js -e js,hbs"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "hbs": "^4.0.1",
+    "nodemon": "^2.0.16",
     "request": "^2.88.0"
-  }
+  },
+  "devDependencies": {}
 }
