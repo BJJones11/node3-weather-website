@@ -6,6 +6,8 @@ const forecast = require('./utils/forecast')
 
 const app = express()
 
+const port = process.env.PORT || 3000
+
 //Define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public')
   //Express needs templates file to be named views by default, this is how you can customize it
@@ -104,8 +106,8 @@ app.get('*', (req, res) => {
 })
 
 // Only have to call this once, it starts up the server on the port I specifiy (console is just for seeing in terminal)
-app.listen(3000, () => {
-  console.log('Server is up on port 3000.')
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}.`)
 })
 
 
