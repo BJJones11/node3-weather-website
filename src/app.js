@@ -64,7 +64,7 @@ app.get('/weather', (req, res) => {
         })
       }
       res.send({
-        forecast: `It is currently ${current.weather_descriptions} with a tempature of ${current.temperature} but feels like ${current.feelslike}, and there is a ${current.precip} percent chance of rain!`,
+        forecast: `It is currently ${current.weather_descriptions} with a tempature of ${current.temperature} but feels like ${current.feelslike}. The humidity is ${current.humidity}.`,
         location: place,
         address: req.query.address
       })
